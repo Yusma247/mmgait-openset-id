@@ -1,0 +1,497 @@
+{
+ "table": "| windows voted | condition | closed-set acc | unknown AUROC | macro F1 (5th pct) | macro F1 (conformal) | staff kept (5th pct) | staff kept (conformal) |\n|---|---|---|---|---|---|---|---|\n| k = 1 | seen modes | 0.962 | 0.770 | 0.708 \u00b1 0.018 | 0.701 \u00b1 0.023 | 0.917 | 0.922 |\n| k = 1 | unseen mode | 0.906 | 0.751 | 0.696 \u00b1 0.045 | 0.690 \u00b1 0.037 | 0.816 | 0.825 |\n| k = 4 | seen modes | 0.989 | 0.886 | 0.769 \u00b1 0.006 | 0.740 \u00b1 0.019 | 0.909 | 0.935 |\n| k = 4 | unseen mode | 0.936 | 0.845 | 0.715 \u00b1 0.102 | 0.709 \u00b1 0.071 | 0.790 | 0.826 |\n| k = 8 | seen modes | 0.994 | 0.936 | 0.801 \u00b1 0.020 | 0.772 \u00b1 0.016 | 0.898 | 0.946 |\n| k = 8 | unseen mode | 0.950 | 0.884 | 0.699 \u00b1 0.155 | 0.728 \u00b1 0.114 | 0.741 | 0.819 |",
+ "per_holdout": {
+  "free_walk": {
+   "k1": {
+    "in_domain": {
+     "closed_set_acc": 0.9682377049180327,
+     "unknown_auroc": 0.7737536123817049,
+     "n_known": 976,
+     "n_unknown": 976,
+     "evt": {
+      "macro_f1": 0.742362355232452,
+      "known_recall": 0.8924180327868853,
+      "unknown_recall": 0.46209016393442626
+     },
+     "p5": {
+      "macro_f1": 0.7333471230867011,
+      "known_recall": 0.8954918032786885,
+      "unknown_recall": 0.42520491803278687
+     },
+     "conformal": {
+      "macro_f1": 0.733301757129528,
+      "known_recall": 0.8995901639344263,
+      "unknown_recall": 0.42110655737704916
+     },
+     "oracle": {
+      "macro_f1": 0.7558141344122103,
+      "known_recall": 0.860655737704918,
+      "unknown_recall": 0.5676229508196722
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.8448325221872316,
+     "unknown_auroc": 0.7038639993962403,
+     "n_known": 3493,
+     "n_unknown": 2295,
+     "evt": {
+      "macro_f1": 0.6333322057550068,
+      "known_recall": 0.6430002862868595,
+      "unknown_recall": 0.5198257080610021
+     },
+     "p5": {
+      "macro_f1": 0.6323654403393373,
+      "known_recall": 0.651588892069854,
+      "unknown_recall": 0.489760348583878
+     },
+     "conformal": {
+      "macro_f1": 0.6382549845214067,
+      "known_recall": 0.6641855138849126,
+      "unknown_recall": 0.4793028322440087
+     },
+     "oracle": {
+      "macro_f1": 0.6551995653243937,
+      "known_recall": 0.6561694818207844,
+      "unknown_recall": 0.559041394335512
+     }
+    }
+   },
+   "k4": {
+    "in_domain": {
+     "closed_set_acc": 0.9916666666666667,
+     "unknown_auroc": 0.889721965495995,
+     "n_known": 240,
+     "n_unknown": 240,
+     "evt": {
+      "macro_f1": 0.7754154491277514,
+      "known_recall": 0.8791666666666667,
+      "unknown_recall": 0.5583333333333333
+     },
+     "p5": {
+      "macro_f1": 0.7717285543341087,
+      "known_recall": 0.8791666666666667,
+      "unknown_recall": 0.5458333333333333
+     },
+     "conformal": {
+      "macro_f1": 0.7588951688726893,
+      "known_recall": 0.9041666666666667,
+      "unknown_recall": 0.45416666666666666
+     },
+     "oracle": {
+      "macro_f1": 0.8359209047036494,
+      "known_recall": 0.8833333333333333,
+      "unknown_recall": 0.7583333333333333
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.8726635514018691,
+     "unknown_auroc": 0.778701667582921,
+     "n_known": 856,
+     "n_unknown": 561,
+     "evt": {
+      "macro_f1": 0.5951311963368578,
+      "known_recall": 0.5537383177570093,
+      "unknown_recall": 0.6452762923351159
+     },
+     "p5": {
+      "macro_f1": 0.5701425121639269,
+      "known_recall": 0.5350467289719626,
+      "unknown_recall": 0.6149732620320856
+     },
+     "conformal": {
+      "macro_f1": 0.6110510654070492,
+      "known_recall": 0.6004672897196262,
+      "unknown_recall": 0.5472370766488414
+     },
+     "oracle": {
+      "macro_f1": 0.6889695703078768,
+      "known_recall": 0.6436915887850467,
+      "unknown_recall": 0.7415329768270945
+     }
+    }
+   },
+   "k8": {
+    "in_domain": {
+     "closed_set_acc": 1.0,
+     "unknown_auroc": 0.9404205607476636,
+     "n_known": 120,
+     "n_unknown": 120,
+     "evt": {
+      "macro_f1": 0.8093769101047937,
+      "known_recall": 0.8416666666666667,
+      "unknown_recall": 0.7416666666666667
+     },
+     "p5": {
+      "macro_f1": 0.8093769101047937,
+      "known_recall": 0.8416666666666667,
+      "unknown_recall": 0.7416666666666667
+     },
+     "conformal": {
+      "macro_f1": 0.7941823986936768,
+      "known_recall": 0.8833333333333333,
+      "unknown_recall": 0.625
+     },
+     "oracle": {
+      "macro_f1": 0.8877034966533895,
+      "known_recall": 0.8916666666666667,
+      "unknown_recall": 0.8833333333333333
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.8917647058823529,
+     "unknown_auroc": 0.8068387642826915,
+     "n_known": 425,
+     "n_unknown": 278,
+     "evt": {
+      "macro_f1": 0.4802549953564494,
+      "known_recall": 0.39294117647058824,
+      "unknown_recall": 0.7985611510791367
+     },
+     "p5": {
+      "macro_f1": 0.4802549953564494,
+      "known_recall": 0.39294117647058824,
+      "unknown_recall": 0.7985611510791367
+     },
+     "conformal": {
+      "macro_f1": 0.5691907753911727,
+      "known_recall": 0.5129411764705882,
+      "unknown_recall": 0.6798561151079137
+     },
+     "oracle": {
+      "macro_f1": 0.7368979280112969,
+      "known_recall": 0.72,
+      "unknown_recall": 0.7517985611510791
+     }
+    }
+   }
+  },
+  "hands_in_pockets": {
+   "k1": {
+    "in_domain": {
+     "closed_set_acc": 0.9629629629629629,
+     "unknown_auroc": 0.7830328117195241,
+     "n_known": 972,
+     "n_unknown": 972,
+     "evt": {
+      "macro_f1": 0.6923116566849706,
+      "known_recall": 0.9403292181069959,
+      "unknown_recall": 0.26440329218106995
+     },
+     "p5": {
+      "macro_f1": 0.691357646346433,
+      "known_recall": 0.9444444444444444,
+      "unknown_recall": 0.257201646090535
+     },
+     "conformal": {
+      "macro_f1": 0.6807557026784449,
+      "known_recall": 0.9475308641975309,
+      "unknown_recall": 0.22325102880658437
+     },
+     "oracle": {
+      "macro_f1": 0.7678332319145438,
+      "known_recall": 0.8364197530864198,
+      "unknown_recall": 0.6337448559670782
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9068627450980392,
+     "unknown_auroc": 0.794647759498462,
+     "n_known": 3468,
+     "n_unknown": 2191,
+     "evt": {
+      "macro_f1": 0.7239700197511549,
+      "known_recall": 0.8667820069204152,
+      "unknown_recall": 0.357371063441351
+     },
+     "p5": {
+      "macro_f1": 0.7233731420922522,
+      "known_recall": 0.868800461361015,
+      "unknown_recall": 0.35235052487448654
+     },
+     "conformal": {
+      "macro_f1": 0.7141905682800871,
+      "known_recall": 0.8745674740484429,
+      "unknown_recall": 0.3085349155636696
+     },
+     "oracle": {
+      "macro_f1": 0.7465059561525482,
+      "known_recall": 0.7482698961937716,
+      "unknown_recall": 0.6955727978092195
+     }
+    }
+   },
+   "k4": {
+    "in_domain": {
+     "closed_set_acc": 0.9874476987447699,
+     "unknown_auroc": 0.8970355686366491,
+     "n_known": 239,
+     "n_unknown": 239,
+     "evt": {
+      "macro_f1": 0.7811175731632923,
+      "known_recall": 0.9497907949790795,
+      "unknown_recall": 0.47280334728033474
+     },
+     "p5": {
+      "macro_f1": 0.7747565502176007,
+      "known_recall": 0.9497907949790795,
+      "unknown_recall": 0.4393305439330544
+     },
+     "conformal": {
+      "macro_f1": 0.7481988236507485,
+      "known_recall": 0.9581589958158996,
+      "unknown_recall": 0.36401673640167365
+     },
+     "oracle": {
+      "macro_f1": 0.8456769651914663,
+      "known_recall": 0.8326359832635983,
+      "unknown_recall": 0.8368200836820083
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9435294117647058,
+     "unknown_auroc": 0.8831416365428854,
+     "n_known": 850,
+     "n_unknown": 537,
+     "evt": {
+      "macro_f1": 0.7882907101885807,
+      "known_recall": 0.8847058823529412,
+      "unknown_recall": 0.5102420856610801
+     },
+     "p5": {
+      "macro_f1": 0.7884118551858261,
+      "known_recall": 0.888235294117647,
+      "unknown_recall": 0.48789571694599626
+     },
+     "conformal": {
+      "macro_f1": 0.777208918726026,
+      "known_recall": 0.9070588235294118,
+      "unknown_recall": 0.41527001862197394
+     },
+     "oracle": {
+      "macro_f1": 0.7933905162406126,
+      "known_recall": 0.7647058823529411,
+      "unknown_recall": 0.8603351955307262
+     }
+    }
+   },
+   "k8": {
+    "in_domain": {
+     "closed_set_acc": 1.0,
+     "unknown_auroc": 0.9426512835481542,
+     "n_known": 119,
+     "n_unknown": 119,
+     "evt": {
+      "macro_f1": 0.8200429909228275,
+      "known_recall": 0.9411764705882353,
+      "unknown_recall": 0.5714285714285714
+     },
+     "p5": {
+      "macro_f1": 0.8200429909228275,
+      "known_recall": 0.9411764705882353,
+      "unknown_recall": 0.5714285714285714
+     },
+     "conformal": {
+      "macro_f1": 0.7647059711575841,
+      "known_recall": 0.9831932773109243,
+      "unknown_recall": 0.3697478991596639
+     },
+     "oracle": {
+      "macro_f1": 0.8872904257604922,
+      "known_recall": 0.865546218487395,
+      "unknown_recall": 0.8991596638655462
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9620853080568721,
+     "unknown_auroc": 0.9213822470869116,
+     "n_known": 422,
+     "n_unknown": 266,
+     "evt": {
+      "macro_f1": 0.8107528849020786,
+      "known_recall": 0.8625592417061612,
+      "unknown_recall": 0.6390977443609023
+     },
+     "p5": {
+      "macro_f1": 0.8107528849020786,
+      "known_recall": 0.8625592417061612,
+      "unknown_recall": 0.6390977443609023
+     },
+     "conformal": {
+      "macro_f1": 0.8345175935591602,
+      "known_recall": 0.9478672985781991,
+      "unknown_recall": 0.5263157894736842
+     },
+     "oracle": {
+      "macro_f1": 0.829127175614893,
+      "known_recall": 0.8056872037914692,
+      "unknown_recall": 0.9135338345864662
+     }
+    }
+   }
+  },
+  "smartphone": {
+   "k1": {
+    "in_domain": {
+     "closed_set_acc": 0.9533622559652929,
+     "unknown_auroc": 0.7536459537166968,
+     "n_known": 922,
+     "n_unknown": 922,
+     "evt": {
+      "macro_f1": 0.6949459270592009,
+      "known_recall": 0.9056399132321041,
+      "unknown_recall": 0.29392624728850325
+     },
+     "p5": {
+      "macro_f1": 0.700736761405007,
+      "known_recall": 0.9121475054229935,
+      "unknown_recall": 0.306941431670282
+     },
+     "conformal": {
+      "macro_f1": 0.6894285701056813,
+      "known_recall": 0.9186550976138829,
+      "unknown_recall": 0.25488069414316705
+     },
+     "oracle": {
+      "macro_f1": 0.7363980385527028,
+      "known_recall": 0.7570498915401301,
+      "unknown_recall": 0.6626898047722343
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9649595687331537,
+     "unknown_auroc": 0.7549714408306597,
+     "n_known": 3339,
+     "n_unknown": 2228,
+     "evt": {
+      "macro_f1": 0.7302118265990905,
+      "known_recall": 0.9257262653489069,
+      "unknown_recall": 0.2706463195691203
+     },
+     "p5": {
+      "macro_f1": 0.7333745367538527,
+      "known_recall": 0.9272237196765498,
+      "unknown_recall": 0.28141831238779175
+     },
+     "conformal": {
+      "macro_f1": 0.7181873408202257,
+      "known_recall": 0.9353099730458221,
+      "unknown_recall": 0.21588868940754039
+     },
+     "oracle": {
+      "macro_f1": 0.7576936983695972,
+      "known_recall": 0.7915543575920935,
+      "unknown_recall": 0.6063734290843806
+     }
+    }
+   },
+   "k4": {
+    "in_domain": {
+     "closed_set_acc": 0.9866666666666667,
+     "unknown_auroc": 0.8722566282129124,
+     "n_known": 225,
+     "n_unknown": 225,
+     "evt": {
+      "macro_f1": 0.7593947804015266,
+      "known_recall": 0.9066666666666666,
+      "unknown_recall": 0.41333333333333333
+     },
+     "p5": {
+      "macro_f1": 0.7605401814011886,
+      "known_recall": 0.8977777777777778,
+      "unknown_recall": 0.4444444444444444
+     },
+     "conformal": {
+      "macro_f1": 0.7136397693343687,
+      "known_recall": 0.9422222222222222,
+      "unknown_recall": 0.2
+     },
+     "oracle": {
+      "macro_f1": 0.8086372420286585,
+      "known_recall": 0.76,
+      "unknown_recall": 0.8488888888888889
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9926829268292683,
+     "unknown_auroc": 0.8725509062430074,
+     "n_known": 820,
+     "n_unknown": 545,
+     "evt": {
+      "macro_f1": 0.7805974288908769,
+      "known_recall": 0.9524390243902439,
+      "unknown_recall": 0.3577981651376147
+     },
+     "p5": {
+      "macro_f1": 0.7861073055240908,
+      "known_recall": 0.9463414634146341,
+      "unknown_recall": 0.3944954128440367
+     },
+     "conformal": {
+      "macro_f1": 0.7378915593748255,
+      "known_recall": 0.9719512195121951,
+      "unknown_recall": 0.1889908256880734
+     },
+     "oracle": {
+      "macro_f1": 0.8377501275797637,
+      "known_recall": 0.8378048780487805,
+      "unknown_recall": 0.7798165137614679
+     }
+    }
+   },
+   "k8": {
+    "in_domain": {
+     "closed_set_acc": 0.9819819819819819,
+     "unknown_auroc": 0.9245495495495496,
+     "n_known": 111,
+     "n_unknown": 111,
+     "evt": {
+      "macro_f1": 0.7731788924275979,
+      "known_recall": 0.9099099099099099,
+      "unknown_recall": 0.4774774774774775
+     },
+     "p5": {
+      "macro_f1": 0.7731788924275979,
+      "known_recall": 0.9099099099099099,
+      "unknown_recall": 0.4774774774774775
+     },
+     "conformal": {
+      "macro_f1": 0.7573300282606564,
+      "known_recall": 0.972972972972973,
+      "unknown_recall": 0.32432432432432434
+     },
+     "oracle": {
+      "macro_f1": 0.8835220738792439,
+      "known_recall": 0.9279279279279279,
+      "unknown_recall": 0.8108108108108109
+     }
+    },
+    "shifted": {
+     "closed_set_acc": 0.9975490196078431,
+     "unknown_auroc": 0.9228442306290546,
+     "n_known": 408,
+     "n_unknown": 269,
+     "evt": {
+      "macro_f1": 0.8073847970256461,
+      "known_recall": 0.9681372549019608,
+      "unknown_recall": 0.40148698884758366
+     },
+     "p5": {
+      "macro_f1": 0.8073847970256461,
+      "known_recall": 0.9681372549019608,
+      "unknown_recall": 0.40148698884758366
+     },
+     "conformal": {
+      "macro_f1": 0.7797827642216255,
+      "known_recall": 0.9950980392156863,
+      "unknown_recall": 0.27137546468401486
+     },
+     "oracle": {
+      "macro_f1": 0.8885693515546897,
+      "known_recall": 0.9215686274509803,
+      "unknown_recall": 0.7843866171003717
+     }
+    }
+   }
+  }
+ }
+}

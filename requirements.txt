@@ -1,0 +1,7 @@
+# Profiling and prep (profile_pc.py, shortcut.py, prep.py) need only numpy.
+numpy>=1.24
+# Training and calibration (run.py, run_xs.py, calib.py)
+torch>=2.0
+scipy>=1.10
+# Figures (explain_fig.py, aggregate.py, aggregate_xs.py)
+matplotlib>=3.7
