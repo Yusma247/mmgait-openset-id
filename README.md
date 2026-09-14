@@ -62,13 +62,14 @@ Mean over 3 random known/unknown splits. Macro-F1 is over 7 classes: 6 known sub
 
 | windows voted | seconds | closed-set acc | unknown AUROC | leave-one-known-out | EVT Weibull | 5th-percentile | split-conformal | oracle |
 |---|---|---|---|---|---|---|---|---|
-| k = 1 | 3 s | 0.968 | 0.795 | 0.663 | 0.739 | 0.736 | 0.732 | 0.762 |
+| k = 1 | 3 s | 0.968 | 0.795 | 0.662 | 0.739 | 0.736 | 0.732 | 0.762 |
 | k = 4 | 6 s | 0.991 | 0.911 | 0.744 | 0.835 | 0.831 | 0.828 | 0.854 |
 | k = 8 | 10 s | 0.998 | 0.953 | 0.824 | 0.868 | 0.868 | 0.850 | 0.894 |
 
 Full tables, per-holdout cross-scenario breakdowns, and the interpretation of every number are in
 **[RESULTS.md](RESULTS.md)**. The dataset profile, the shortcut audit, and a line-by-line review
-of the original reference implementation's bugs are in **[ANALYSIS.md](ANALYSIS.md)**.
+of the original reference implementation's bugs are in **[ANALYSIS.md](ANALYSIS.md)**. A short,
+chart-heavy version of the whole project in one document is in **[REPORT.md](REPORT.md)**.
 
 ## How it works
 
@@ -100,10 +101,12 @@ code/                everything is run from here
   aggregate.py         results/runs/*.json -> table + figures/openset_results.png
   aggregate_xs.py      results/runs_xs/*.json -> table + figures/xscenario_results.png
   explain_fig.py       the five-panel radar explainer figure
+  report_figs.py       two extra figures for REPORT.md, built from already-saved results
 figures/              generated plots (checked in)
 results/              json summaries (checked in); large per-split score/model files are gitignored
 ANALYSIS.md           dataset profile, shortcut audit, review of the reference paper's code
 RESULTS.md            the open-set experiment: method, full numbers, what they mean, what they don't
+REPORT.md             short chart-heavy version of the whole project in one document
 ```
 
 ## Getting started
