@@ -1,0 +1,17 @@
+# Raw dataset and derived tensors -- large, and available from Zenodo (see README)
+/mmGait10/
+/mmGait10_v2.zip
+/prepared_*.npz
+
+# Regenerable, large training artifacts -- keep only the small human-readable
+# result/summary JSON files and figures under version control
+/results/runs/*.pt
+/results/runs/*.npz
+/results/runs_xs/*.npz
+/results/runs/*.log
+/results/runs_xs/*.log
+/results/card.npy
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
