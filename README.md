@@ -68,7 +68,9 @@ Mean over 3 random known/unknown splits. Macro-F1 is over 7 classes: 6 known sub
 
 Full tables, per-holdout cross-scenario breakdowns, and the interpretation of every number are in
 **[RESULTS.md](RESULTS.md)**. The dataset profile, the shortcut audit, and a line-by-line review
-of the original reference implementation's bugs are in **[ANALYSIS.md](ANALYSIS.md)**.
+of the original reference implementation's bugs are in **[ANALYSIS.md](ANALYSIS.md)**. A single
+self-contained report covering methodology, architecture, results, validation checks, and
+limitations in one document is in **[REPORT.md](REPORT.md)**.
 
 ## How it works
 
@@ -100,10 +102,13 @@ code/                everything is run from here
   aggregate.py         results/runs/*.json -> table + figures/openset_results.png
   aggregate_xs.py      results/runs_xs/*.json -> table + figures/xscenario_results.png
   explain_fig.py       the five-panel radar explainer figure
+  report_figs.py       two extra figures for REPORT.md, built from already-saved results
 figures/              generated plots (checked in)
 results/              json summaries (checked in); large per-split score/model files are gitignored
 ANALYSIS.md           dataset profile, shortcut audit, review of the reference paper's code
 RESULTS.md            the open-set experiment: method, full numbers, what they mean, what they don't
+REPORT.md             a single self-contained write-up: methodology, architecture, results,
+                      validation checks, cross-scenario robustness, and limitations, in one document
 ```
 
 ## Getting started

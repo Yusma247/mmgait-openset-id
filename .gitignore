@@ -11,6 +11,7 @@
 /results/runs/*.log
 /results/runs_xs/*.log
 /results/card.npy
+/results/shortcut_feats.npz
 
 __pycache__/
 *.pyc
