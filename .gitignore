@@ -16,3 +16,9 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Local-only report and its assets -- not published
+/REPORT.md
+/code/report_figs.py
+/figures/report_shortcut_bar.png
+/figures/report_holdout_bar.png
