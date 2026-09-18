@@ -19,6 +19,8 @@ __pycache__/
 
 # Local-only report and its assets -- not published
 /REPORT.md
+/REPORT.docx
 /code/report_figs.py
 /figures/report_shortcut_bar.png
 /figures/report_holdout_bar.png
+/scratch_docx/
