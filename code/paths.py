@@ -27,6 +27,11 @@ RESULTS = PROJECT / "results"
 RUNS = RESULTS / "runs"
 RUNS_XS = RESULTS / "runs_xs"
 
+# people-gait (Meng et al., AAAI 2020) - cross-dataset generalisation check, not part
+# of the main mmGait10 pipeline. https://github.com/mmGait/people-gait
+PEOPLE_GAIT = PROJECT / "people-gait-master"
+PG_PREPARED = PROJECT / "prepared_peoplegait_64pts.npz"
+
 for _d in (FIGURES, RESULTS, RUNS, RUNS_XS):
     _d.mkdir(parents=True, exist_ok=True)
 
