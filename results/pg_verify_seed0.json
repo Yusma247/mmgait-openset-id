@@ -1,0 +1,10 @@
+{
+ "seed": 0,
+ "n_tracks": 105,
+ "n_volunteers": 48,
+ "n_same_pairs": 78,
+ "n_diff_pairs": 5382,
+ "same_cos_mean": 0.99195742677481,
+ "diff_cos_mean": 0.9910857253098972,
+ "auroc": 0.5080610582282823
+}
