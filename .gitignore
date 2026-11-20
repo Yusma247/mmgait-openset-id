@@ -3,6 +3,11 @@
 /mmGait10_v2.zip
 /prepared_*.npz
 
+# Other raw datasets used for cross-dataset checks -- large, available from their
+# own sources (people-gait: github.com/mmGait/people-gait, MVRHAR: Zenodo 19917009)
+/people-gait-master/
+/MVRHAR-main/
+
 # Regenerable, large training artifacts -- keep only the small human-readable
 # result/summary JSON files and figures under version control
 /results/runs/*.pt
@@ -20,7 +25,14 @@ __pycache__/
 # Local-only report and its assets -- not published
 /REPORT.md
 /REPORT.docx
+/REPORT_v9.docx
 /code/report_figs.py
 /figures/report_shortcut_bar.png
 /figures/report_holdout_bar.png
 /scratch_docx/
+
+# Personal files -- never published
+/yusma pic.pdf
+
+# Word's own lock files for any open .docx in this folder
+~$*.docx
